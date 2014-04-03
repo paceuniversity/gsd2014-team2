@@ -1,14 +1,13 @@
 package com.example.ziara;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import android.app.Activity;
+import android.app.ListActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,58 +18,50 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.os.Build;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity implements OnItemClickListener {
 
-	private ListView mainListView;
-	private ArrayAdapter<String> listAdapter;
+	public static final String[] titles = new String[] { "Strawberry",
+			"Banana", "Orange", "Mixed" };
+
+	public static final String[] descriptions = new String[] {
+			"It is an aggregate accessory fruit",
+			"It is the largest herbaceous flowering plant", "Citrus Fruit",
+			"Mixed Fruits" };
+
+	public static final Integer[] images = { R.drawable.blue, R.drawable.green,
+			R.drawable.orange, R.drawable.red };
+
+	ListView listView;
+	List<LocationItem> locationItem;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+		locationItem = new ArrayList<LocationItem>();
+        for (int i = 0; i < titles.length; i++) {
+            LocationItem item = new LocationItem(images[i], titles[i], descriptions[i]);
+            locationItem.add(item);
+        }
+ 
+        listView = (ListView) findViewById(R.id.list);
+        CustomListViewAdapter adapter = new CustomListViewAdapter(this,
+                R.layout.row_layout, locationItem);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(this);
+		
+	}
 
-		// Find the ListView resource.
-		mainListView = (ListView) findViewById(R.id.list);
-
-		// Create and populate a List of planet names.
-		String[] planets = new String[] { "Mercury", "Venus", "Earth", "Mars",
-				"Jupiter", "Saturn", "Uranus", "Neptune" };
-
-		// Create ArrayAdapter using the planet list.
-		listAdapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, planets);
-
-		// Set the ArrayAdapter as the ListView's adapter.
-		mainListView.setAdapter(listAdapter);
-
-		mainListView.setOnItemClickListener(new OnItemClickListener() {
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-
-				// ListView Clicked item index
-				int itemPosition = position;
-
-				// ListView Clicked item value
-				String itemValue = (String) mainListView
-						.getItemAtPosition(position);
-
-				// Show Alert
-				Toast.makeText(
-						getApplicationContext(),
-						"Position :" + itemPosition + "  ListItem : "
-								+ itemValue, Toast.LENGTH_SHORT).show();
-
-			}
-
-		});
+	@Override
+	public void onItemClick(AdapterView<?> parent, View view, int position,
+            long id) {
+		Toast toast = Toast.makeText(getApplicationContext(),
+	            "Item " + (position + 1) + ": " + locationItem.get(position),
+	            Toast.LENGTH_SHORT);
+	        toast.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
+	        toast.show();
 	}
 
 	@Override
