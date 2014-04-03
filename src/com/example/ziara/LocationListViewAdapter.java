@@ -10,11 +10,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CustomListViewAdapter extends ArrayAdapter<LocationItem> {
+public class LocationListViewAdapter extends ArrayAdapter<LocationItem> {
 
 	Context context;
 
-	public CustomListViewAdapter(Context context, int resourceId,
+	public LocationListViewAdapter(Context context, int resourceId,
 			List<LocationItem> items) {
 		super(context, resourceId, items);
 		this.context = context;
@@ -23,8 +23,8 @@ public class CustomListViewAdapter extends ArrayAdapter<LocationItem> {
 	/* private view holder class */
 	private class ViewHolder {
 		ImageView imageView;
-		TextView txtTitle;
-		TextView txtDesc;
+		TextView txtName;
+		//TextView txtDesc;
 	}
 
 	public View getView(int position, View convertView, ViewGroup parent) {
@@ -36,15 +36,15 @@ public class CustomListViewAdapter extends ArrayAdapter<LocationItem> {
 		if (convertView == null) {
 			convertView = mInflater.inflate(R.layout.row_layout, null);
 			holder = new ViewHolder();
-			holder.txtDesc = (TextView) convertView.findViewById(R.id.desc);
-			holder.txtTitle = (TextView) convertView.findViewById(R.id.title);
+			//holder.txtDesc = (TextView) convertView.findViewById(R.id.desc);
+			holder.txtName = (TextView) convertView.findViewById(R.id.title);
 			holder.imageView = (ImageView) convertView.findViewById(R.id.icon);
 			convertView.setTag(holder);
 		} else
 			holder = (ViewHolder) convertView.getTag();
 
-		holder.txtDesc.setText(rowItem.getDesc());
-		holder.txtTitle.setText(rowItem.getTitle());
+		//holder.txtDesc.setText(rowItem.getDesc());
+		holder.txtName.setText(rowItem.getName());
 		holder.imageView.setImageResource(rowItem.getImageId());
 
 		return convertView;

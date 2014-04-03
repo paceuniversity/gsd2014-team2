@@ -1,14 +1,22 @@
 package com.example.ziara;
 
 public class LocationItem {
+	private int locationId;
 	private int imageId;
-	private String title;
-	private String desc;
+	private String name;
 
-	public LocationItem(int imageId, String title, String desc) {
+	public LocationItem(int locationId, int imageId, String name) {
+		this.locationId = locationId;
 		this.imageId = imageId;
-		this.title = title;
-		this.desc = desc;
+		this.name = name;
+	}
+
+	public int getLocationId() {
+		return locationId;
+	}
+
+	public void setLocationId(int locationId) {
+		this.locationId = locationId;
 	}
 
 	public int getImageId() {
@@ -19,25 +27,17 @@ public class LocationItem {
 		this.imageId = imageId;
 	}
 
-	public String getTitle() {
-		return title;
+	public String getName() {
+		return name;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getDesc() {
-		return desc;
-	}
-
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return title + "\n";
+		return name + "\n";
 	}
 
 }

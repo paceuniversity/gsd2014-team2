@@ -21,15 +21,12 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnItemClickListener {
 
-	public static final String[] titles = new String[] { "Strawberry",
+	public static final int[] locationId = new int[] {1,2,3,4};
+	
+	public static final String[] name = new String[] { "Strawberry",
 			"Banana", "Orange", "Mixed" };
 
-	public static final String[] descriptions = new String[] {
-			"It is an aggregate accessory fruit",
-			"It is the largest herbaceous flowering plant", "Citrus Fruit",
-			"Mixed Fruits" };
-
-	public static final Integer[] images = { R.drawable.blue, R.drawable.green,
+	public static final Integer[] image = { R.drawable.blue, R.drawable.green,
 			R.drawable.orange, R.drawable.red };
 
 	ListView listView;
@@ -41,13 +38,13 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		setContentView(R.layout.activity_main);
 
 		locationItem = new ArrayList<LocationItem>();
-        for (int i = 0; i < titles.length; i++) {
-            LocationItem item = new LocationItem(images[i], titles[i], descriptions[i]);
+        for (int i = 0; i < name.length; i++) {
+            LocationItem item = new LocationItem(locationId[i], image[i], name[i]);
             locationItem.add(item);
         }
  
         listView = (ListView) findViewById(R.id.list);
-        CustomListViewAdapter adapter = new CustomListViewAdapter(this,
+        LocationListViewAdapter adapter = new LocationListViewAdapter(this,
                 R.layout.row_layout, locationItem);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);

@@ -1083,6 +1083,8 @@ containing a value of this type.
         public static final int ic_launcher=0x7f02005a;
         public static final int orange=0x7f02005b;
         public static final int red=0x7f02005c;
+        public static final int right_arrow=0x7f02005d;
+        public static final int yellow=0x7f02005e;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1099,12 +1101,12 @@ containing a value of this type.
         public static final int action_settings=0x7f05003f;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
+        public static final int arrow=0x7f05003e;
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f05003c;
         public static final int default_activity_button=0x7f050028;
-        public static final int desc=0x7f05003e;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
