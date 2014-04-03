@@ -1,8 +1,10 @@
 package com.example.ziara;
 
 import java.util.List;
+
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,14 +12,18 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+
 public class LocationListViewAdapter extends ArrayAdapter<LocationItem> {
 
 	Context context;
+	private Typeface tf;
 
 	public LocationListViewAdapter(Context context, int resourceId,
 			List<LocationItem> items) {
 		super(context, resourceId, items);
 		this.context = context;
+		tf = Typeface.createFromAsset(context.getAssets(), "fonts/myFont.ttf");
 	}
 
 	/* private view holder class */
@@ -37,7 +43,8 @@ public class LocationListViewAdapter extends ArrayAdapter<LocationItem> {
 			convertView = mInflater.inflate(R.layout.row_layout, null);
 			holder = new ViewHolder();
 			//holder.txtDesc = (TextView) convertView.findViewById(R.id.desc);
-			holder.txtName = (TextView) convertView.findViewById(R.id.title);
+			holder.txtName = (TextView) convertView.findViewById(R.id.name);
+			holder.txtName.setTypeface(tf);
 			holder.imageView = (ImageView) convertView.findViewById(R.id.icon);
 			convertView.setTag(holder);
 		} else
@@ -49,4 +56,5 @@ public class LocationListViewAdapter extends ArrayAdapter<LocationItem> {
 
 		return convertView;
 	}
+
 }
