@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,46 +15,55 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnItemClickListener {
 
-	public static final int[] locationId = new int[] {1,2,3,4};
-	
-	public static final String[] name = new String[] { "Strawberry",
-			"Banana", "Orange", "Mixed" };
+	public static final int[] locationId = new int[] { 1, 2, 3, 4 };
+
+	public static final String[] name = new String[] { "Desert", "Beach",
+			"Mountain", "Plains" };
 
 	public static final Integer[] image = { R.drawable.blue, R.drawable.green,
 			R.drawable.orange, R.drawable.red };
 
 	ListView listView;
 	List<LocationItem> locationItem;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		locationItem = new ArrayList<LocationItem>();
-        for (int i = 0; i < name.length; i++) {
-            LocationItem item = new LocationItem(locationId[i], image[i], name[i]);
-            locationItem.add(item);
-        }
-    	
-        listView = (ListView) findViewById(R.id.list);
-        LocationListViewAdapter adapter = new LocationListViewAdapter(this,
-                R.layout.row_layout, locationItem);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(this);
-		
+		for (int i = 0; i < name.length; i++) {
+			LocationItem item = new LocationItem(locationId[i], image[i],
+					name[i]);
+			locationItem.add(item);
+		}
+
+		listView = (ListView) findViewById(R.id.list);
+		LocationListViewAdapter adapter = new LocationListViewAdapter(this,
+				R.layout.row_layout, locationItem);
+		listView.setAdapter(adapter);
+		listView.setOnItemClickListener(this);
+
 	}
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
-            long id) {
-		Toast toast = Toast.makeText(getApplicationContext(),
-	            "Item " + (position + 1) + ": " + locationItem.get(position),
-	            Toast.LENGTH_SHORT);
-	        toast.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
-	        toast.show();
+			long id) {
+		/*Toast toast = Toast.makeText(getApplicationContext(), "Item "
+				+ (position + 1) + ": " + locationItem.get(position),
+				Toast.LENGTH_SHORT);
+		toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+		toast.show();*/
+		Intent intent = new Intent(getApplicationContext(), InformationActivity.class);
+		Bundle bundle = new Bundle();
+		//Bundle bundle2 = new Bundle();
+		bundle.putStringArray("STRING_ARRAY", name);
+		bundle.putInt("POSITION", position);
+		intent.putExtras(bundle);
+		//intent.putExtras(bundle2);
+		startActivity(intent);
 	}
 
 	@Override

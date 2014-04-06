@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/locationName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:textSize="32sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/locationImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:layout_below="@id/locationName"/>
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_below="@id/locationImage"
+                android:background="@color/DarkMagenta" />
+            
+            <TextView
+                android:id="@+id/geography"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_below="@id/history"
+                android:background="@color/SaddleBrown" />
+
+            <TextView
+                android:id="@+id/wildlife"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_below="@id/geography"
+                android:background="@color/LightGreen" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
