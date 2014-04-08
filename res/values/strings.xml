@@ -7,11 +7,12 @@
     <string name="action_settings">Settings</string>
     <string name="name">ListViewBaseAdapter</string>
     <string name="image">Thumbnail</string>
-    <string name="location1history">location1history</string>
-    <string name="location2history">location2history</string>
-    <string name="location1geography">location1geography</string>
-    <string name="location2geography">location2geography</string>
-    <string name="location1wildlife">location1wildlife</string>
-    <string name="location2wildlife">location2wildlife</string>
+    <string name="location1history">	Beit el Mtoni literally means The Palace by the stream. The palace owes this name to its beautiful location on the western shore of Zanzibar. It is one of the oldest buildings of Zanzibar and it was the largest palace on the island during the reign of Sultan Sayyid Said, who moved the capital of his Omani empire form Muscat to Zanzibar during the first half of the 19th century. At that time, over a thousand people lived in the palace and its direct surroundings. But around the 1880s the palace was abandoned and fell into ruin. Although severely deteriorated, Mtoni Palace still offers visitors a glimpse into the world of the Arabian royalty once living there. 
+Entering the palace from the coast line, one steps into the former reception hall. Most guests would not go any further when visiting Beit el Mtoni, since the women in the palace were not to be seen by stranger’s eyes. But now, visitors can step over the threshold and walk in the footsteps of the Omani household. A visit continues into the inner courtyard, the palace garden and the well preserved bathing complex. One row of baths was used by the courtiers, whereas a separate domed aisle was uniquely reserved for the use of the Sultan and his first spouse.</string>
+    <string name="location2history">A long sand beach, shallow waters and wind at almost any day of the year – this is a perfect spot for kite surfing! Top it up with wide selection of hotels of different price ranges and great diving opportunities. But no need to be a kite surfer to fully enjoy the east coast of Zanzibar. There are plenty of things to do in and around Paje. It’s a great base when you want to explore the island and nearby waters. Kizimkazi, village known for dolphins living near by, is just a short drive away. Jambiani village is a walking distance away, Jozani Forest on the way when you drive to Paje, and historical caves all around.</string>
+    <string name="location1geography">Plains, Jungle, Beach</string>
+    <string name="location2geography">Beach</string>
+    <string name="location1wildlife">N/A</string>
+    <string name="location2wildlife">Starfish, Fish, Whales</string>
 
 </resources>

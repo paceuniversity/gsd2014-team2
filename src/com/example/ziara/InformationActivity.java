@@ -42,7 +42,7 @@ public class InformationActivity extends Activity {
 			case 0:
 				historyString = getResources().getString(R.string.location1history);
 				history.setText(historyString);
-				locationImage.setBackgroundResource(R.drawable.zanzibardesert);
+				locationImage.setBackgroundResource(R.drawable.mtonipalace);
 				geographyString = getResources().getString(R.string.location1geography);
 				geography.setText(geographyString);
 				wildlifeString = getResources().getString(R.string.location1wildlife);
@@ -51,7 +51,7 @@ public class InformationActivity extends Activity {
 			case 1:
 				historyString = getResources().getString(R.string.location2history);
 				history.setText(historyString);
-				locationImage.setBackgroundResource(R.drawable.zanzibarbeach);
+				locationImage.setBackgroundResource(R.drawable.pajebeach);
 				geographyString = getResources().getString(R.string.location2geography);
 				geography.setText(geographyString);
 				wildlifeString = getResources().getString(R.string.location2wildlife);

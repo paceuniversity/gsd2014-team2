@@ -30,34 +30,57 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:scaleType="fitXY"
+                android:minHeight="300dp"
                 android:layout_below="@id/locationName"/>
+            
+            <TextView
+                android:id="@+id/historyLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/locationImage"
+                android:layout_marginTop="10dp"
+                android:text="Information/History"
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/history"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
-                android:layout_marginTop="10dp"
                 android:textSize="20sp"
-                android:layout_below="@id/locationImage"
-                android:background="@color/DarkMagenta" />
+                android:layout_below="@id/historyLabel"
+                android:background="@color/Gray" />
+            
+            <TextView
+                android:id="@+id/geographyLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/history"
+                android:text="Geography"
+                android:textSize="20sp"/>
             
             <TextView
                 android:id="@+id/geography"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
-                android:layout_marginTop="10dp"
                 android:textSize="20sp"
-                android:layout_below="@id/history"
-                android:background="@color/SaddleBrown" />
+                android:layout_below="@id/geographyLabel"
+                android:background="@color/Gray" />
 
+            <TextView
+                android:id="@+id/wildlifeLabel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/geography"
+                android:text="Wildlife"
+                android:textSize="20sp"/>
+            
             <TextView
                 android:id="@+id/wildlife"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
-                android:layout_marginTop="10dp"
                 android:textSize="20sp"
-                android:layout_below="@id/geography"
-                android:background="@color/LightGreen" />
+                android:layout_below="@id/wildlifeLabel"
+                android:background="@color/Gray" />
         </RelativeLayout>
     </ScrollView>
 
