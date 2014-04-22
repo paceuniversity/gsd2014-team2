@@ -1226,9 +1226,10 @@ containing a value of this type.
         public static final int pajebeach=0x7f02005d;
         public static final int red=0x7f02005e;
         public static final int right_arrow=0x7f02005f;
-        public static final int yellow=0x7f020060;
-        public static final int zanzibarbeach=0x7f020061;
-        public static final int zanzibardesert=0x7f020062;
+        public static final int sandle=0x7f020060;
+        public static final int yellow=0x7f020061;
+        public static final int zanzibarbeach=0x7f020062;
+        public static final int zanzibardesert=0x7f020063;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1357,9 +1358,10 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
         public static final int fragment_main=0x7f030019;
-        public static final int information_main=0x7f03001a;
-        public static final int row_layout=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int info_page=0x7f03001a;
+        public static final int information_main=0x7f03001b;
+        public static final int row_layout=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
