@@ -22,8 +22,8 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
 	public static final String[] name = new String[] { "Mtoni Palace Ruins", "Paje Beach", "Mangapwani Slave Chamber", "Palace Museum"};
 
-	public static final Integer[] image = { R.drawable.blue, R.drawable.tent,
-			R.drawable.orange, R.drawable.red };
+	public static final Integer[] image = { R.drawable.forest, R.drawable.sandle,
+			R.drawable.camera, R.drawable.tent };
 
 	ListView listView;
 	List<LocationItem> locationItem;
