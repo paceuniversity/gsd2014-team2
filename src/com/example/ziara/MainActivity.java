@@ -20,9 +20,9 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
 	public static final int[] locationId = new int[] { 1, 2, 3, 4 };
 
-	public static final String[] name = new String[] { "Mtoni Palace Ruins", "Paje Beach"};
+	public static final String[] name = new String[] { "Mtoni Palace Ruins", "Paje Beach", "Mangapwani Slave Chamber", "Palace Museum"};
 
-	public static final Integer[] image = { R.drawable.blue, R.drawable.green,
+	public static final Integer[] image = { R.drawable.blue, R.drawable.tent,
 			R.drawable.orange, R.drawable.red };
 
 	ListView listView;

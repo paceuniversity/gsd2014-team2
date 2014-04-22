@@ -1224,11 +1224,14 @@ containing a value of this type.
         public static final int mtonipalace=0x7f02005b;
         public static final int orange=0x7f02005c;
         public static final int pajebeach=0x7f02005d;
-        public static final int red=0x7f02005e;
-        public static final int right_arrow=0x7f02005f;
-        public static final int yellow=0x7f020060;
-        public static final int zanzibarbeach=0x7f020061;
-        public static final int zanzibardesert=0x7f020062;
+        public static final int palacemuseum=0x7f02005e;
+        public static final int red=0x7f02005f;
+        public static final int right_arrow=0x7f020060;
+        public static final int slavechamber=0x7f020061;
+        public static final int tent=0x7f020062;
+        public static final int yellow=0x7f020063;
+        public static final int zanzibarbeach=0x7f020064;
+        public static final int zanzibardesert=0x7f020065;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1410,12 +1413,18 @@ containing a value of this type.
         public static final int hello_world=0x7f0a000f;
         public static final int image=0x7f0a0012;
         public static final int info=0x7f0a000e;
-        public static final int location1geography=0x7f0a0015;
+        public static final int location1geography=0x7f0a0014;
         public static final int location1history=0x7f0a0013;
-        public static final int location1wildlife=0x7f0a0017;
-        public static final int location2geography=0x7f0a0016;
-        public static final int location2history=0x7f0a0014;
+        public static final int location1wildlife=0x7f0a0015;
+        public static final int location2geography=0x7f0a0017;
+        public static final int location2history=0x7f0a0016;
         public static final int location2wildlife=0x7f0a0018;
+        public static final int location3geography=0x7f0a001a;
+        public static final int location3history=0x7f0a0019;
+        public static final int location3wildlife=0x7f0a001b;
+        public static final int location4geography=0x7f0a001d;
+        public static final int location4history=0x7f0a001c;
+        public static final int location4wildlife=0x7f0a001e;
         public static final int name=0x7f0a0011;
     }
     public static final class style {

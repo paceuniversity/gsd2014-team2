@@ -58,8 +58,22 @@ public class InformationActivity extends Activity {
 				wildlife.setText(wildlifeString);
 				break;
 			case 2:
+				historyString = getResources().getString(R.string.location3history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.slavechamber);
+				geographyString = getResources().getString(R.string.location3geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location3wildlife);
+				wildlife.setText(wildlifeString);
 				break;
 			case 3:
+				historyString = getResources().getString(R.string.location4history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.palacemuseum);
+				geographyString = getResources().getString(R.string.location4geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location4wildlife);
+				wildlife.setText(wildlifeString);
 				break;
 		}
 		
