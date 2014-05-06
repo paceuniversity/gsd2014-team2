@@ -4,9 +4,14 @@
     tools:context="com.example.ziara.MainActivity" >
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/exit"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/exit"
         app:showAsAction="never"/>
+    
+    <item 
+        android:id="@+id/aboutus"
+        android:orderInCategory="100"
+        android:title="@string/aboutus"/>
 
 </menu>

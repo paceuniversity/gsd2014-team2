@@ -18,12 +18,19 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity implements OnItemClickListener {
 
-	public static final int[] locationId = new int[] { 1, 2, 3, 4 };
+	public static final String[] name = new String[] { "Mtoni Palace Ruins",
+			"Paje Beach", "Mangapwani Slave Chamber", "Palace Museum",
+			"Kijichi Persian Baths", "Living Stone House",
+			"Minara Miwili Church", "Kanisa la Mkunazini", "Beit al Ajaib",
+			"Maruhubi Palace Ruins", "Ngome Kongwe", "Old Indian Dispensary" };
 
-	public static final String[] name = new String[] { "Mtoni Palace Ruins", "Paje Beach", "Mangapwani Slave Chamber", "Palace Museum"};
+	public static final int[] locationId = new int[name.length];
 
-	public static final Integer[] image = { R.drawable.forest, R.drawable.sandle,
-			R.drawable.camera, R.drawable.tent };
+	public static final Integer[] image = { R.drawable.forest,
+			R.drawable.sandle, R.drawable.camera, R.drawable.tent,
+			R.drawable.camera, R.drawable.camera, R.drawable.forest,
+			R.drawable.tent, R.drawable.tent, R.drawable.camera,
+			R.drawable.tent, R.drawable.camera, };
 
 	ListView listView;
 	List<LocationItem> locationItem;
@@ -50,44 +57,35 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
-		/*Toast toast = Toast.makeText(getApplicationContext(), "Item "
-				+ (position + 1) + ": " + locationItem.get(position),
-				Toast.LENGTH_SHORT);
-		toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
-		toast.show();*/
-		Intent intent = new Intent(getApplicationContext(), InformationActivity.class);
+
+		Intent intent = new Intent(getApplicationContext(),
+				InformationActivity.class);
 		Bundle bundle = new Bundle();
-		//Bundle bundle2 = new Bundle();
 		bundle.putStringArray("STRING_ARRAY", name);
 		bundle.putInt("POSITION", position);
 		intent.putExtras(bundle);
-		//intent.putExtras(bundle2);
 		startActivity(intent);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+		if (id == R.id.exit) {
+			System.exit(0);
+		} else if (id == R.id.aboutus) {
+			Intent intent = new Intent(getApplicationContext(),
+					AboutUsActivity.class);
+			startActivity(intent);
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
+	
 	public static class PlaceholderFragment extends Fragment {
 
 		public PlaceholderFragment() {

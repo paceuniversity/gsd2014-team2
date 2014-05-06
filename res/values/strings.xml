@@ -4,7 +4,9 @@
     <string name="app_name">Ziara</string>
     <string name="info">Information</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="aboutus">About Us</string>
+    <string name="about">\n\tThis product was created as a part of the Global Software Development 2014 as a student-lead software engineering project. It is intended to help encourage English speaking tourist to visit Zanzibar. This application was created using the Android SDK. The creators of this application are Derek Li and Michael Ang utilizing the SCRUM Agile Process. \n\tAlso, we could not have done this without our special team back at Zanzibar who provided us with in-depth content and life-changing insights. Special thanks to Dr. Christelle Scharff for overseeing this project.</string>
     <string name="name">ListViewBaseAdapter</string>
     <string name="image">Thumbnail</string>
     
@@ -28,5 +30,54 @@ Of particular note is a room dedicated to the famous Princess Salme, daughter of
 In the palace garden is Makusurani graveyard containing the graves of Sultans Said, Barghash, Majid, Khaled, Khalifa and Abdullah.</string>
     <string name="location4geography">City</string>
     <string name="location4wildlife">N/A</string>
+    
+    
+    <string name="location5history">The Persian Baths at Kidichi are located northeast of Stone Town, about 4 kms inland from the main coast road, in the main plantation area of the island.  They were built in 1850 by Sultan Said who owned land nearby.  He and his second wife, Binte Irich Mirza (also called Schesade or Sherazade), would come here for hunting excursions and to oversee the work on their plantations.  The bath-house was built so they could refresh themselves after the journey from town.
+Because Schesade was granddaughter to the Shah of Persia, the baths were built in the typical Persian style of the time, with significant decorative stucco work and an underground furnace to keep the bath water warm. 
+Unfortunately, the bath-house has not been well maintained, and mould grows on much of the beautiful stucco work.  The domed ceiling contains a circle of small windows that used to be stained glass and would cast beautiful light patterns over the white walls.  Today, you can enter the bath-house, and see the changing room, bathing pool and massage tables</string>
+    <string name="location5geography">Plains</string>
+    <string name="location5wildlife">N/A</string>
+    
+	<string name="location6history">David Livingstone is probably the best-known of all the 19th century European explorers in Africa.  Many of his journeys began and ended in Zanzibar, and he lived in this house before departing on his final journey to identify the source of the Nile.
+The house was built around 1860 by Sultan Majid and is located on the northeast side of Stone Town.  It was used by Livingstone and other missionaries and explorers such as Burton, Speke, Cameron and Stanley as a starting point for expeditions into eastern and central Africa during the second half of the 19th century.
+In the early 20th century, the house was used by members of the island\'s Indian community for a variety of purposes.  In 1947, it was bought by the colonial government and became a scientific laboratory for research into clove diseases.  After independence and the revolution it became the Zanzibar headquarters of the Tanzania Friendship Tourist Bureau.  Today, this old building is now the main office of the Zanzibar Tourist Corporation (ZTC).</string>
+    <string name="location6geography">Jungles, Plains</string>
+    <string name="location6wildlife">N/A</string>
+    
+	<string name="location7history">The Roman Catholic cathedral of St. Joseph is an important historical building located in the Baghani area of Stone Town, Zanzibar.  It was built by French missionaries between 1893 and 1898, and the plans were drawn by the same French architect who designed the cathedral in Marseilles, France.  The defining characteristic of the cathedral are its twin spires (similar to those of Marseille’s church) which are prominent elements of the Stone Town’s skyline and can be easily spotted from a distance off the coast.  Despite these prominent spires, the church itself can prove difficult to find while walking the narrow streets of Baghani. 
+The cathedral interior is painted with murals from the Old Testament, many of which have deteriorated over time and some have been poorly restored.  The tiles and stained glass windows were all imported from France. 
+The cathedral is in regular use by Stone Town’s Catholic community - a mixture of Zanzibaris, Tanzanians from the mainland, Goans and Europeans.  There are several masses held each Sunday and occasionally on weekdays.  Outside mass times, the main cathedral doors are usually locked, but entrance can sometimes be gained via the back.</string>
+    <string name="location7geography">City</string>
+    <string name="location7wildlife">N/A</string>
+    
+	<string name="location8history">The Old Anglican Church is a must see for anyone interested in Zanzibar history and the influence of the British abolitionist movement on Zanzibar.  The Cathedral\'s altar symbolically stands on the location of the whipping post from the island\'s largest slave market.  The Church is open to visitation, and on the grounds is one of the most famous Slave Monuments in the world.
+The Cathedral was built in 1873 by Edward Steere, the third Bishop of Zanzibar and famous British abolitionist.  The Cathedral took ten years to build and its strange barrel vault roof was Steere\’s own invention.  It still stands strong today despite the local belief at the time of construction that it would never hold.  Bishop Steer died in 1882 and was buried behind the altar.
+Of further historical significance, the wooden cross was made from the tree beneath which the famed explorer and anti-slavery crusader Dr. David Livingstone\'s heart was buried.  He died at the village of Dhitambo in Zambia on 2 May 1873 while searching for the source of the Nile.  Two of his loyal companions, Susi and Chumah, removed his heart and buried it under the tree at the spot where he died.  They dried his body in the sun for two weeks before carrying it back to Zanzibar.</string>
+    <string name="location8geography">City</string>
+    <string name="location8wildlife">N/A</string>
+    
+    <string name="location9history">Known as the House of Wonders,  Beit el Ajaib  was built around 1883 as the ceremonial palace for the ruling sultan, Sultan Barghash.  This is one of the most prominent and magnificent structures in Zanzibar and all of East Africa.  It is the first building in East Africa to have electricity and an electric elevator!  Beit al Ajaib can be seen from a great distance while approaching Zanzibar from the sea, and now acts as a symbol of Zanzibar’s rich history and is featured on many postcards and history books.
+In the House of Wonders Museum, visitors will learn not only about Zanzibar’s rich history and culture, but also about the history and culture of the entire Swahili Coast which extends from Southern Somalia to Northern Mozambique.  Over the past decade a considerable amount of archaeological and historical research has been undertaken to reveal a very long and rich history that can now be systematically exhibited.  The East African coast is also the western rim of the Indian Ocean, and the museum will therefore highlight the historical and cultural consequences of the convergence along the East African coast of continental Africa and the maritime world of the Indian Ocean.</string>
+    <string name="location9geography">City</string>
+    <string name="location9wildlife">N/A</string>
+    
+    <string name="location10history">The ruins of Maruhubi Palace are only four kilometres north of Zanzibar Town, just a few steps from the beach. The palace is named after its former owner, an Arab from the Al-Marhuby tribe.
+The palace was built by Sultan Barghash, the third Arab sultan of Zanzibar, between 1880-1882.  Sultan Barghash used the palace to house his wife and up to 100 concubines, while he himself lived in a separate palace in Zanzibar Town.
+Maruhubi Palace was destroyed by a fire in 1899, leaving few remains including the large stone columns which had once supported a large wooden balcony that circumnavigated the upper floor. In the old Persian-style bathhouse, the separate bathrooms for the women and the Sultan\'s own large bathroom can still be viewed.  </string>
+    <string name="location10geography">Plains</string>
+    <string name="location10wildlife">Birds</string>
+    
+    <string name="location11history">The Arab Fort, also known as the Old Fort or by its local name Ngome Kongwe, is next to Beit al-Ajaib - The House of Wonders Museum.  It is a very large and imposing structure, with high walls topped by castellated battlements.  
+The Fort was built between 1698 and 1701, immediately after the two-century Portuguese occupation of Zanzibar, by the Busaidi group of Omani Arabs who took control of Zanzibar in 1698.  The Fort was constructed on the site of a Portuguese church which had been built between 1598 and 1612.  In the main courtyard remnants of the old church can still be seen built into the inside wall.
+The fort was originally used as a defence against the Portuguese and a rival Omani group, the Mazrui, who occupied Mombasa at that time.  In the 19th century, the fort became a prison and criminals were incarcerated, punished and sometimes executed.  In Swahili the word “gereza” means prison, and some believe it to be derived from the Portuguese word \"ireja\", meaning church.  Then, in the early 20th century, the fort became a depot for the railway which ran from Zanzibar Town to Bububu, north of Stone Town.  In 1949, the Fort was refurbished and the main courtyard was used as a ladies\' tennis club, but after the 1964 Revolution it fell into disuse.
+Today, the fort has been renovated and is open to visitors.  It is possible to reach the top of the battlements and go into the towers on the western side for spectacular views of Zanzibar Harbour and the Indian Ocean.  In 1994, a section was converted into an open-air theatre for performances of contemporary and traditional music, drama and dance.</string>
+    <string name="location11geography">City</string>
+    <string name="location11wildlife">N/A</string>
+    
+    <string name="location12history">The Old Indian Dispensary, also known as the Ithnashiri Dispensary, is an important historical building in Stone Town, Zanzibar.  It is located on the seafront, on Mizingani Road, halfway between the Palace Museum and the harbour.  It was built by a wealthy Ismaili Indian merchant, Tharia Topan, as a charitable hospital for the poor and in order to commemorate the Golden Jubilee of Queen Victoria. 
+The Dispensary is one of the most decorative of the old Zanzibar buildings, with ornate carved balconies, stucco work and stained glass windows.  It is a symbol of the multi-cultural architecture and heritage of the Zanzibar Town.  The wooden carved balconies and stained glass decorations are of Indian influence, while the main structure was built using traditional Zanzibari coral rag and limestone, and the walls are covered with stucco adornments of European influence.  The inside of the Dispensary is also quite remarkable and includes a covered courtyard with carved bridges connecting the floors.
+The building faces the clove harbour, and is close to the old clove distillery.  The first stone of the Old Dispensary was laid in 1887 and the building was finished in 1894.  The upper level houses a small museum that explains and depicts the restoration process. Old photos of the waterfront are also on display and there are some shops on the ground floor.</string>
+    <string name="location12geography">City</string>
+    <string name="location12wildlife">N/A</string>
 
 </resources>

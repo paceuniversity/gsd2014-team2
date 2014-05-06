@@ -12,7 +12,6 @@ public class InformationActivity extends Activity {
 	TextView locationName, history, geography, wildlife;
 	ImageView locationImage;
 	String historyString, geographyString, wildlifeString;
-	//String value;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,15 +27,11 @@ public class InformationActivity extends Activity {
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
 			value = extras.getInt("POSITION");
-			//Converts the int to a string so you can TOAST it since int does not work
-			//value = String.valueOf(extras.getInt("POSITION"));
 		}
 		Bundle extras2 = getIntent().getExtras();
 		locationArray = extras2.getStringArray("STRING_ARRAY");
 		locationName.setText(locationArray[value]);
 		
-		
-		//Toast.makeText(getApplicationContext(), locationArray[value], Toast.LENGTH_LONG).show();
 
 		switch(value) {
 			case 0:
@@ -73,6 +68,84 @@ public class InformationActivity extends Activity {
 				geographyString = getResources().getString(R.string.location4geography);
 				geography.setText(geographyString);
 				wildlifeString = getResources().getString(R.string.location4wildlife);
+				wildlife.setText(wildlifeString);
+				break;
+				
+			//NEW
+			case 4:
+				historyString = getResources().getString(R.string.location5history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.persianbath);
+				geographyString = getResources().getString(R.string.location5geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location5wildlife);
+				wildlife.setText(wildlifeString);
+				break;
+			case 5:
+				historyString = getResources().getString(R.string.location6history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.livingstonehouse);
+				geographyString = getResources().getString(R.string.location6geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location6wildlife);
+				wildlife.setText(wildlifeString);
+				break;
+			case 6:
+				historyString = getResources().getString(R.string.location7history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.minarachurch);
+				geographyString = getResources().getString(R.string.location7geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location7wildlife);
+				wildlife.setText(wildlifeString);
+				break;
+			case 7:
+				historyString = getResources().getString(R.string.location8history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.kanisa);
+				geographyString = getResources().getString(R.string.location8geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location8wildlife);
+				wildlife.setText(wildlifeString);
+				break;
+				
+				
+				
+			//NEW NEW
+			case 8:
+				historyString = getResources().getString(R.string.location9history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.beitalajaib);
+				geographyString = getResources().getString(R.string.location9geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location9wildlife);
+				wildlife.setText(wildlifeString);
+				break;
+			case 9:
+				historyString = getResources().getString(R.string.location10history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.maruhubi);
+				geographyString = getResources().getString(R.string.location10geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location10wildlife);
+				wildlife.setText(wildlifeString);
+				break;
+			case 10:
+				historyString = getResources().getString(R.string.location11history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.ngome);
+				geographyString = getResources().getString(R.string.location11geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location11wildlife);
+				wildlife.setText(wildlifeString);
+				break;
+			case 11:
+				historyString = getResources().getString(R.string.location12history);
+				history.setText(historyString);
+				locationImage.setBackgroundResource(R.drawable.oldindian);
+				geographyString = getResources().getString(R.string.location12geography);
+				geography.setText(geographyString);
+				wildlifeString = getResources().getString(R.string.location12wildlife);
 				wildlife.setText(wildlifeString);
 				break;
 		}
