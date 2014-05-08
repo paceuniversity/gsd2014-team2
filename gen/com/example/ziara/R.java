@@ -1235,15 +1235,16 @@ containing a value of this type.
         public static final int pajebeach=0x7f020066;
         public static final int palacemuseum=0x7f020067;
         public static final int persianbath=0x7f020068;
-        public static final int red=0x7f020069;
-        public static final int right_arrow=0x7f02006a;
-        public static final int sandle=0x7f02006b;
-        public static final int slavechamber=0x7f02006c;
-        public static final int tent=0x7f02006d;
-        public static final int yellow=0x7f02006e;
-        public static final int zanzibarbeach=0x7f02006f;
-        public static final int zanzibardesert=0x7f020070;
-        public static final int ziarazanzibar=0x7f020071;
+        public static final int plane=0x7f020069;
+        public static final int red=0x7f02006a;
+        public static final int right_arrow=0x7f02006b;
+        public static final int sandle=0x7f02006c;
+        public static final int slavechamber=0x7f02006d;
+        public static final int tent=0x7f02006e;
+        public static final int yellow=0x7f02006f;
+        public static final int zanzibarbeach=0x7f020070;
+        public static final int zanzibardesert=0x7f020071;
+        public static final int ziarazanzibar=0x7f020072;
     }
     public static final class id {
         public static final int about=0x7f05003d;
