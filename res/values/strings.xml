@@ -7,6 +7,7 @@
     <string name="exit">Exit</string>
     <string name="aboutus">About Us</string>
     <string name="about">\n\tThis product was created as a part of the Global Software Development 2014 as a student-lead software engineering project. It is intended to help encourage English speaking tourist to visit Zanzibar. This application was created using the Android SDK. The creators of this application are Derek Li and Michael Ang utilizing the SCRUM Agile Process. \n\tAlso, we could not have done this without our special team back at Zanzibar who provided us with in-depth content and life-changing insights. Special thanks to Dr. Christelle Scharff for overseeing this project.</string>
+    <string name="website">http://www.zanzibarpackage.com/destinations/historical-sizes-in-zanzibar</string>
     <string name="name">ListViewBaseAdapter</string>
     <string name="image">Thumbnail</string>
     

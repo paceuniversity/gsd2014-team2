@@ -29,6 +29,15 @@
                 android:layout_below="@id/abouttitle"
                 android:text="@string/about" >
             </TextView>
+            
+            <TextView 
+                android:id="@+id/website"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about"
+                android:layout_marginTop="20dp"
+                android:text="@string/website"> 
+           	</TextView>
         </RelativeLayout>
     </ScrollView>
 
